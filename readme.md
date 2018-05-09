@@ -54,6 +54,12 @@ Create .env file
 ```
 Create .env file. (reference from example.env)
 ```
+Enviroment Variables
+
+* **USERNAME** : User name of the admin user which you created while setup miniflux application
+* **PASSWORD** : Password of the admin user which you created while setup miniflux application
+* **BASE_URL** : Host of the miniflux application where it is running. By default `localhost:80`
+* **API_VERSION** : API version of the miniflux Rest APIs. By default it should be `v1`
 
 Install dependencies
 
