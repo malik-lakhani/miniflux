@@ -35,6 +35,7 @@ nbproject
 .svn
 .CVS
 .idea
+.env
 node_modules
 log
 client/lib/bower_components
