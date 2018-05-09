@@ -43,3 +43,4 @@ client/lib/bower_components
 client/javascripts/**/*.bundle.js
 client/javascripts/chartlib.min.js*
 dump.rdb
+postgres_data

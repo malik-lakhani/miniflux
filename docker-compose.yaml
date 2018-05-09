@@ -1,0 +1,19 @@
+version: '2'
+services:
+  miniflux:
+    image: miniflux/miniflux:2.0.7
+    ports:
+      - "${MINIFLUX_PORT}:8080"
+    depends_on:
+      - db
+    environment:
+      - DATABASE_URL=postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db/${POSTGRES_DB}?sslmode=disable
+  db:
+    image: postgres:10.1
+    ports:
+      - $POSTGRES_PORT:5432
+    environment:
+      - POSTGRES_USER=$POSTGRES_USER
+      - POSTGRES_PASSWORD=$POSTGRES_PASSWORD
+    volumes:
+      - ./postgres_data:/var/lib/postgresql/data
