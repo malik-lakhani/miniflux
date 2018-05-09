@@ -1,3 +1,5 @@
+#! bin/bash
+
 export MINIFLUX_PORT=80
 export POSTGRES_USER=miniflux
 export POSTGRES_PASSWORD=JMLEwQHKG7
