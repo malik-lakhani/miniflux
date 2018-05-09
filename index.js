@@ -13,7 +13,7 @@ const apiVersion = process.env.API_VERSION;
 const user = process.env.USERNAME;
 const password = process.env.PASSWORD;
 
-const regexPattern = process.argv[2] || '';
+const regexPattern = process.argv[2] || /([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})/;
 
 const getAllFeeds = () => {
   return new Promise((resolve) => {
